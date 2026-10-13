@@ -1,6 +1,6 @@
 {
-  "latest_version_code": 2,
-  "latest_version_name": "1.0.1",
+  "latest_version_code": 1,
+  "latest_version_name": "1.0.0",
   "title": "Zen Mate Update Available",
   "changelog": "- Official high-speed media downloader release\n- Multi-format audio & video support\n- Ambient music player engine\n- Native haptic touch & performance optimizations",
   "apk_url": "https://github.com/kaali-k/zenmate-app/releases/latest/download/zen-mate-v1.0.0.apk",
