@@ -1028,3 +1028,44 @@ code {
   border-radius: var(--radius-sm);
 }
 
+.btn-secondary-subtle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  padding: 8px 14px;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary-subtle:hover {
+  color: var(--crimson-secondary);
+}
+
+.btn-legacy-link {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: 10px;
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.btn-legacy-link:hover {
+  color: var(--text-muted);
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+
