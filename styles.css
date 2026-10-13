@@ -1068,4 +1068,66 @@ code {
   gap: 4px;
 }
 
+.download-tip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: rgba(255, 30, 56, 0.05);
+  border: 1px solid rgba(255, 30, 56, 0.14);
+  border-radius: var(--radius-full);
+  text-align: center;
+}
+
+.download-tip svg {
+  color: var(--crimson-secondary);
+  flex-shrink: 0;
+}
+
+.leaderboard-ad-wrapper {
+  margin: 22px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.ad-slot-728 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 728px;
+  height: 90px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ad-slot-320 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 50px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .ad-slot-728 {
+    display: none;
+  }
+  .ad-slot-320 {
+    display: flex;
+  }
+}
+
+
 

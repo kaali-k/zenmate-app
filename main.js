@@ -55,15 +55,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Dynamic APK link sync from version.json (keeps download button fresh without showing version numbers)
+  // Smartlink ad integration on download (once per session)
+  const SMARTLINK_URL = 'https://www.profitableratecpmnetwork.com/zn0znpr5?key=772cdcfaa0b48bb9e3ff407b05360081';
+
+  document.querySelectorAll('a[href$=".apk"]').forEach(link => {
+    link.addEventListener('click', () => {
+      try {
+        if (!sessionStorage.getItem('zenmate_smartlink_opened')) {
+          sessionStorage.setItem('zenmate_smartlink_opened', 'true');
+          window.open(SMARTLINK_URL, '_blank');
+        }
+      } catch (_) {}
+    });
+  });
+
+  // Dynamic APK link sync from version.json (keeps primary 64-bit download fresh)
   fetch('version.json')
     .then(res => res.json())
     .then(data => {
       if (data && data.apk_url) {
         document.querySelectorAll('a[href$=".apk"]').forEach(link => {
-          link.href = data.apk_url;
+          if (!link.getAttribute('data-abi')) {
+            link.href = data.apk_url;
+          }
         });
       }
     })
     .catch(() => {});
 });
+
