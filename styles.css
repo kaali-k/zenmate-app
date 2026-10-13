@@ -741,6 +741,14 @@ code {
    Responsive Adaptations
    ========================================================================== */
 
+.screen-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
 @media (max-width: 850px) {
   .desktop-nav {
     display: none;
@@ -753,17 +761,53 @@ code {
   .cta-banner {
     flex-direction: column;
     text-align: center;
+    padding: 36px 24px;
   }
 
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+
+  .section {
+    padding: 70px 0;
   }
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .nav-container {
+    padding: 12px 18px;
+  }
+
+  .hero-section {
+    padding: 50px 0 35px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    letter-spacing: -0.6px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
   .team-card {
-    padding: 26px 18px;
+    padding: 24px 18px;
+  }
+
+  .team-title {
+    font-size: 1.6rem;
   }
 
   .btn-large {
@@ -773,5 +817,34 @@ code {
   .hero-cta-group {
     flex-direction: column;
     width: 100%;
+  }
+
+  .phone-frame {
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  .brand-badge {
+    font-size: 0.58rem;
+  }
+
+  .btn-download-nav {
+    padding: 7px 12px;
+    font-size: 0.78rem;
+  }
+
+  .screen-tab-btn {
+    padding: 6px 12px;
+    font-size: 0.76rem;
+  }
+
+  .spec-pill {
+    padding: 6px 10px;
+    font-size: 0.75rem;
   }
 }
