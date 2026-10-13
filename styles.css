@@ -956,3 +956,75 @@ code {
     font-size: 0.75rem;
   }
 }
+
+/* ==========================================================================
+   Sponsored Ad Banners (Adsterra Integration)
+   Clean dark card container, non-intrusive presentation
+   ========================================================================== */
+
+.section-ad {
+  padding: 30px 0;
+}
+
+.ad-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ad-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: var(--transition-smooth);
+}
+
+.ad-card:hover {
+  border-color: var(--border-focus);
+}
+
+.ad-card-300 {
+  width: 100%;
+  max-width: 360px;
+}
+
+.ad-card-native {
+  width: 100%;
+  max-width: 920px;
+}
+
+.ad-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.ad-frame-300 {
+  width: 300px;
+  height: 250px;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-sm);
+}
+
+.ad-frame-native {
+  width: 100%;
+  min-height: 120px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
