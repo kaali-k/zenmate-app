@@ -367,6 +367,62 @@ code {
   color: var(--crimson-red);
 }
 
+.platforms-strip {
+  max-width: 840px;
+  margin: 0 auto 38px;
+  padding: 16px 22px;
+  background: rgba(16, 18, 24, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 30, 56, 0.2);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.platforms-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--crimson-red);
+}
+
+.platforms-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.platform-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 6px 13px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+}
+
+.platform-chip:hover {
+  border-color: rgba(255, 30, 56, 0.45);
+  background: rgba(255, 30, 56, 0.1);
+  transform: translateY(-1px);
+}
+
+.platform-chip svg {
+  width: 14px;
+  height: 14px;
+  color: var(--crimson-red);
+}
+
 /* ==========================================================================
    Real Screen Showcase / Showcase Carousel
    ========================================================================== */
