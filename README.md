@@ -4,7 +4,7 @@
 
 [![Platform](https://img.shields.io/badge/Platform-Android_8.0%2B-blue.svg?style=flat-square)](https://github.com/kaali-k/zenmate-app)
 [![Developer](https://img.shields.io/badge/Developed_By-Zentix_Team-FF1E38.svg?style=flat-square)](https://kaali-k.github.io/kalanasahan-portfolio/zentix.html)
-[![Founder](https://img.shields.io/badge/Founder-Kalana_Sahan_Dillimuni-7928CA.svg?style=flat-square)](https://kaali-k.github.io/kalanasahan-portfolio/)
+[![Founder](https://img.shields.io/badge/Zentix-Founder-7928CA.svg?style=flat-square)](https://kaali-k.github.io/kalanasahan-portfolio/)
 [![Latest Release](https://img.shields.io/badge/Release-v1.0.0-green.svg?style=flat-square)](https://github.com/kaali-k/zenmate-app/releases)
 
 Official Website: **[https://kaali-k.github.io/zenmate-app/](https://kaali-k.github.io/zenmate-app/)**
@@ -35,6 +35,6 @@ Official Website: **[https://kaali-k.github.io/zenmate-app/](https://kaali-k.git
 ## Credits & Support
 
 - **Developed By**: [Zentix Team](https://kaali-k.github.io/kalanasahan-portfolio/zentix.html)
-- **Founder**: [Kalana Sahan Dillimuni](https://kaali-k.github.io/kalanasahan-portfolio/)
+- **Founder**: [Founder Portfolio](https://kaali-k.github.io/kalanasahan-portfolio/)
 - **Contact**: `zentixteamofficial@gmail.com`
 - **Privacy Policy**: [https://kaali-k.github.io/zenmate-app/privacy.html](https://kaali-k.github.io/zenmate-app/privacy.html)
