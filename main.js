@@ -55,23 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Automatic Version Detection from version.json (Zero manual website edits)
+  // Dynamic APK link sync from version.json (keeps download button fresh without showing version numbers)
   fetch('version.json')
     .then(res => res.json())
     .then(data => {
-      if (data && data.latest_version_name) {
-        const badge = document.querySelector('.hero-badge span:last-child');
-        if (badge) {
-          badge.textContent = `Official Android Release \u00B7 v${data.latest_version_name}`;
-        }
-        if (data.apk_url) {
-          document.querySelectorAll('a[href$=".apk"]').forEach(link => {
-            link.href = data.apk_url;
-          });
-        }
+      if (data && data.apk_url) {
+        document.querySelectorAll('a[href$=".apk"]').forEach(link => {
+          link.href = data.apk_url;
+        });
       }
     })
-    .catch(() => {
-      // Fallback to static values if running offline
-    });
+    .catch(() => {});
 });
