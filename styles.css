@@ -418,8 +418,11 @@ code {
 }
 
 .platform-chip svg {
-  width: 14px;
-  height: 14px;
+  width: 16px !important;
+  height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  flex-shrink: 0 !important;
   color: var(--crimson-red);
 }
 
