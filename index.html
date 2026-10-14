@@ -10,15 +10,19 @@
   <meta name="description" content="Download high-quality 320kbps MP3 audio &amp; HD/4K videos from YouTube, Instagram Reels, TikTok, Facebook, Twitter/X, and 1000+ sites. Mix multi-layer ambient soundscapes with sleep timer. 100% Free for Android by Zentix Team.">
   <meta name="keywords" content="Zen Mate, Zen Mate APK, Universal Media Downloader, Instagram Reel Downloader, TikTok Video Downloader, YouTube Audio Downloader, Facebook Video Downloader, Twitter Video Downloader, Ambient Soundscape Mixer, Ambient Music Player, Sleep Timer, Zentix Team">
   <meta name="author" content="Zentix Team">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="thumbnail" content="https://kaali-k.github.io/zenmate-app/app_logo.png">
   <link rel="canonical" href="https://kaali-k.github.io/zenmate-app/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Zen Mate">
   <meta property="og:url" content="https://kaali-k.github.io/zenmate-app/">
   <meta property="og:title" content="Zen Mate – Universal Social Media Downloader &amp; Ambient Sound Mixer">
   <meta property="og:description" content="Save videos and 320kbps MP3 audio from YouTube, Instagram Reels, TikTok, Facebook, and 1000+ sites. Mix relaxing ambient sounds with sleep timer. Free for Android by Zentix Team.">
   <meta property="og:image" content="https://kaali-k.github.io/zenmate-app/app_logo.png">
+  <meta property="og:image:secure_url" content="https://kaali-k.github.io/zenmate-app/app_logo.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
   <meta property="og:image:alt" content="Zen Mate App Icon">
@@ -30,36 +34,68 @@
   <meta name="twitter:description" content="Download high-quality 320kbps MP3 audio &amp; HD/4K videos from YouTube and 1000+ sites. 100% Free for Android by Zentix Team.">
   <meta name="twitter:image" content="https://kaali-k.github.io/zenmate-app/app_logo.png">
 
-  <!-- Favicon & Stylesheet -->
-  <link rel="icon" type="image/png" href="app_logo.png">
+  <!-- Favicon & Touch Icons for Google Search Results -->
+  <link rel="icon" type="image/png" sizes="512x512" href="https://kaali-k.github.io/zenmate-app/app_logo.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://kaali-k.github.io/zenmate-app/app_logo.png">
+  <link rel="shortcut icon" href="https://kaali-k.github.io/zenmate-app/app_logo.png">
+  <link rel="apple-touch-icon" href="https://kaali-k.github.io/zenmate-app/app_logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.0.8">
+  <link rel="stylesheet" href="styles.css?v=1.0.9">
 
-  <!-- Structured Data / JSON-LD for Google Rich Results -->
+  <!-- Structured Data / JSON-LD for Google Rich Results & Custom Site Name -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Zen Mate",
-    "operatingSystem": "Android 8.0+",
-    "applicationCategory": "MultimediaApplication",
-    "image": "https://kaali-k.github.io/zenmate-app/app_logo.png",
-    "screenshot": "https://kaali-k.github.io/zenmate-app/screen_home.png",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "description": "Universal social media video and audio downloader (YouTube, Instagram Reels, TikTok, Facebook, Twitter/X) with a multi-track ambient soundscape mixer and sleep timer for Android.",
-    "downloadUrl": "https://github.com/kaali-k/zenmate-app/releases/download/v1.0.0/Zen.Mate-arm64-v8a-release.apk",
-    "softwareVersion": "1.0.0",
-    "author": {
-      "@type": "Organization",
-      "name": "Zentix Team",
-      "url": "https://kaali-k.github.io/kalanasahan-portfolio/zentix.html"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kaali-k.github.io/zenmate-app/#website",
+        "url": "https://kaali-k.github.io/zenmate-app/",
+        "name": "Zen Mate",
+        "alternateName": [
+          "Zen Mate Downloader",
+          "ZenMate Downloader",
+          "Zen Mate App",
+          "Zentix Zen Mate"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zentix Team",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://kaali-k.github.io/zenmate-app/app_logo.png"
+          }
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://kaali-k.github.io/zenmate-app/#app",
+        "name": "Zen Mate",
+        "operatingSystem": "Android 8.0+",
+        "applicationCategory": "MultimediaApplication",
+        "image": "https://kaali-k.github.io/zenmate-app/app_logo.png",
+        "screenshot": [
+          "https://kaali-k.github.io/zenmate-app/screen_home.png",
+          "https://kaali-k.github.io/zenmate-app/screen_player.png",
+          "https://kaali-k.github.io/zenmate-app/screen_downloads.png"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Universal social media video and audio downloader (YouTube, Instagram Reels, TikTok, Facebook, Twitter/X) with a multi-track ambient soundscape mixer and sleep timer for Android.",
+        "downloadUrl": "https://github.com/kaali-k/zenmate-app/releases/download/v1.0.0/Zen.Mate-arm64-v8a-release.apk",
+        "softwareVersion": "1.0.0",
+        "author": {
+          "@type": "Organization",
+          "name": "Zentix Team",
+          "url": "https://kaali-k.github.io/kalanasahan-portfolio/zentix.html"
+        }
+      }
+    ]
   }
   </script>
 </head>
