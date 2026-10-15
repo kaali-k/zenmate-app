@@ -1195,56 +1195,6 @@ code {
 }
 
 /* ==========================================================================
-   Changelog Section
-   ========================================================================== */
-.changelog-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.changelog-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-focus);
-  border-left: 3px solid var(--crimson-red);
-  border-radius: var(--radius-md);
-  padding: 24px 28px;
-}
-
-.changelog-card.changelog-old {
-  border-left-color: #333;
-  opacity: 0.7;
-}
-
-.changelog-version {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--crimson-secondary);
-  margin-bottom: 14px;
-}
-
-.changelog-old .changelog-version {
-  color: var(--text-muted);
-}
-
-.changelog-items {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.changelog-items li {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  padding-left: 4px;
-}
-
-/* ==========================================================================
    FAQ Section
    ========================================================================== */
 .faq-list {
@@ -1332,10 +1282,6 @@ code {
   .faq-q {
     font-size: 0.93rem;
     padding: 16px 4px;
-  }
-
-  .changelog-card {
-    padding: 18px 20px;
   }
 }
 
