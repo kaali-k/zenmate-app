@@ -23,10 +23,31 @@
       gap: 10px;
       align-items: center;
     }
+    .nav-btn-pro {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 13px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #FFB300;
+      border: 1px solid rgba(255, 179, 0, 0.35);
+      border-radius: 9px;
+      background: rgba(255, 179, 0, 0.08);
+      white-space: nowrap;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .nav-btn-pro:hover {
+      background: rgba(255, 179, 0, 0.16);
+      border-color: #FFB300;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 12px rgba(255, 179, 0, 0.25);
+    }
     .nav-btn-link {
       display: inline-flex;
       align-items: center;
-      padding: 7px 15px;
+      padding: 7px 14px;
       font-size: 0.85rem;
       font-weight: 600;
       color: var(--text-muted);
@@ -62,6 +83,54 @@
     .nav-btn-play:hover {
       transform: translateY(-1px);
       box-shadow: 0 4px 18px rgba(255, 30, 56, 0.45);
+    }
+
+    .pro-promo-card {
+      max-width: 580px;
+      margin: 8px auto 0;
+      background: linear-gradient(135deg, rgba(255, 179, 0, 0.07), rgba(255, 30, 56, 0.06));
+      border: 1px solid rgba(255, 179, 0, 0.3);
+      border-radius: 16px;
+      padding: 16px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    }
+    .pro-promo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 179, 0, 0.14);
+      color: #FFB300;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .pro-promo-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .pro-promo-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFB300;
+      color: #0A0B0E;
+      font-weight: 800;
+      font-size: 0.84rem;
+      padding: 8px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .pro-promo-btn:hover {
+      background: #FFC107;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(255, 179, 0, 0.35);
     }
 
     .official-hero {
@@ -200,6 +269,12 @@
       .nav-actions {
         gap: 6px;
       }
+      .nav-btn-pro {
+        padding: 5px 8px;
+        font-size: 0.7rem;
+        border-radius: 7px;
+        gap: 3px;
+      }
       .nav-btn-link {
         padding: 5px 9px;
         font-size: 0.72rem;
@@ -240,6 +315,19 @@
         border-radius: 12px;
         justify-content: center;
       }
+      .pro-promo-card {
+        margin: 16px 4px 0;
+        padding: 14px 14px;
+        border-radius: 14px;
+      }
+      .pro-promo-desc {
+        font-size: 0.8rem;
+        line-height: 1.45;
+      }
+      .pro-promo-btn {
+        padding: 7px 14px;
+        font-size: 0.78rem;
+      }
       .feature-grid {
         grid-template-columns: 1fr;
         gap: 12px;
@@ -272,6 +360,10 @@
     @media (max-width: 360px) {
       .brand-title {
         font-size: 0.92rem;
+      }
+      .nav-btn-pro {
+        padding: 4px 6px;
+        font-size: 0.65rem;
       }
       .nav-btn-link {
         padding: 4px 7px;
@@ -307,6 +399,10 @@
         </div>
       </a>
       <div class="nav-actions">
+        <a href="index.html" class="nav-btn-pro" title="All-In-One Edition with YouTube Support">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <span>Zen Mate Pro</span>
+        </a>
         <a href="privacy-official.html" class="nav-btn-link">Privacy Policy</a>
         <a href="https://play.google.com/store/apps/details?id=com.zentix.zenmate" class="nav-btn-play" target="_blank">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
@@ -339,6 +435,21 @@
             <div style="font-size: 0.72rem; font-weight: normal; color: #AAA;">GET IT ON</div>
             <div style="font-size: 1.1rem; font-weight: 800;">Google Play</div>
           </div>
+        </a>
+      </div>
+
+      <!-- Zen Mate Pro Callout Card -->
+      <div class="pro-promo-card">
+        <div class="pro-promo-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <span>NEED ALL-IN-ONE &amp; YOUTUBE DOWNLOADS?</span>
+        </div>
+        <p class="pro-promo-desc">
+          Google Play Store guidelines restrict direct YouTube extraction. For unrestricted 4K video downloads, 320kbps YouTube-to-MP3 extraction, and direct APK updates, get <strong>Zen Mate Pro</strong>.
+        </p>
+        <a href="index.html" class="pro-promo-btn">
+          <span>Get Zen Mate Pro Edition</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
       </div>
     </section>
@@ -381,7 +492,7 @@
       <div class="compliance-footer-card">
         <h4 style="color:#FFF; font-size:1.1rem; margin-bottom: 8px;">Google Play Developer Policy Notice</h4>
         <p style="color:var(--text-muted); font-size:0.9rem; line-height: 1.5; margin:0;">
-          Zen Mate Official complies strictly with Google Play Developer Policies. Downloading or extracting content from YouTube is not supported. For questions, visit our <a href="privacy-official.html" style="color:var(--crimson-red); text-decoration: underline;">Privacy Policy</a> or contact <a href="mailto:zentixteamofficial@gmail.com" style="color:var(--crimson-red);">zentixteamofficial@gmail.com</a>.
+          Zen Mate Official complies strictly with Google Play Developer Policies (YouTube extraction is disabled). For unrestricted downloads including YouTube, visit <a href="index.html" style="color:#FFB300; font-weight:700; text-decoration: underline;">Zen Mate Pro</a>. For questions, visit our <a href="privacy-official.html" style="color:var(--crimson-red); text-decoration: underline;">Privacy Policy</a> or contact <a href="mailto:zentixteamofficial@gmail.com" style="color:var(--crimson-red);">zentixteamofficial@gmail.com</a>.
         </p>
       </div>
     </div>
