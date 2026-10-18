@@ -1,0 +1,9 @@
+{
+  "latest_version_code": 1,
+  "latest_version_name": "1.0.0",
+  "title": "Zen Mate Official",
+  "changelog": "- Official Google Play Store Release\n- High-Speed Media Downloader\n- Ambient Music Player with Background Play\n- Full Scoped Storage & Offline Gallery Support",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.zentix.zenmate",
+  "website_url": "https://kaali-k.github.io/zenmate-app/official.html",
+  "is_force_update": false
+}
