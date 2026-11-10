@@ -199,7 +199,7 @@
         <span class="app-badge-tag">PACKAGE ID: com.zentix.zenmate</span>
       </div>
       <h1>Privacy Policy</h1>
-      <span class="legal-meta">Last Updated: October 2026 &middot; Effective for Google Play Distribution</span>
+      <span class="legal-meta">Last Updated: November 2026 &middot; Effective for Google Play Distribution</span>
 
       <p>
         Welcome to <strong>Zen Mate: Video Downloader & Player</strong> ("the Application"), developed and distributed by <strong>Zentix Team</strong> ("we", "us", or "our").
@@ -208,12 +208,12 @@
 
       <div class="highlight-box">
         <p style="margin:0; font-weight: 500; color: #FFF;">
-          <strong>Core Privacy Principle:</strong> Zen Mate is built with a zero-tracking, privacy-first architecture. We do not require accounts, logins, or personal profiling. All media downloaded or played remains solely on your personal Android device.
+          <strong>Core Privacy Principle:</strong> Zen Mate is built with a zero-tracking, privacy-first architecture. We do not require accounts, logins, or personal profiling. All media downloaded or played remains solely on your personal Android device. To support continuous development and keep Zen Mate free, we display non-intrusive advertisements via <strong>Google AdMob</strong>.
         </p>
       </div>
 
       <h2>1. Information We Do Not Collect</h2>
-      <p>Zen Mate does not collect, process, or sell any of the following:</p>
+      <p>Zen Mate operates on a decentralized, on-device model and does not collect, process, or sell any of the following:</p>
       <ul>
         <li><strong>Personal Identity:</strong> Your name, email address, phone number, contacts, or home address.</li>
         <li><strong>User Activity:</strong> Search keywords, clipboard history, or individual URLs processed within the application.</li>
@@ -222,11 +222,12 @@
       </ul>
 
       <h2>2. Device Permissions and Usage</h2>
-      <p>Zen Mate requests strictly necessary permissions required to deliver its core media playback and saving functionalities:</p>
+      <p>Zen Mate requests strictly necessary permissions required to deliver its core media playback, background downloading, and saving functionalities:</p>
       <ul>
         <li><strong>Scoped Media Access (READ_MEDIA_AUDIO, READ_MEDIA_VIDEO):</strong> Used exclusively to enable the offline audio/video player to locate media saved by Zen Mate and display them in your library. Zen Mate does not require or utilize <code>MANAGE_EXTERNAL_STORAGE</code>.</li>
-        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to display the persistent media playback controller (play/pause/skip) on your lock screen and notification shade when playing ambient soundscapes or music in the background.</li>
-        <li><strong>Network Access (INTERNET, ACCESS_NETWORK_STATE):</strong> Required to fetch streaming data and user-requested public media content from online sources.</li>
+        <li><strong>Foreground Services (FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK, FOREGROUND_SERVICE_DATA_SYNC):</strong> Required to maintain uninterrupted background media downloads and keep background audio playback active with lockscreen and notification control bars when the screen is turned off or you switch apps.</li>
+        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to display real-time download progress and the persistent media playback controller (play/pause/skip) on your lock screen and notification shade.</li>
+        <li><strong>Network Access (INTERNET, ACCESS_NETWORK_STATE):</strong> Required to fetch streaming data and user-requested public media content from online sources and to serve advertisements via Google AdMob.</li>
         <li><strong>Vibration (VIBRATE):</strong> Used for subtle haptic feedback when interacting with app controls.</li>
       </ul>
 
@@ -235,16 +236,42 @@
       <ul>
         <li>
           <strong>Google Firebase Crashlytics & Analytics (Google LLC):</strong> Helps our development team monitor stability, diagnose app crashes, and understand aggregate usage trends. Information transmitted is strictly non-personally identifiable technical telemetry (e.g., device model, OS version, stack traces). 
-          <br><a href="https://policies.google.com/privacy" target="_blank" style="color:var(--crimson-red); font-size:0.9rem;">Google Privacy & Terms &rarr;</a>
+          <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--crimson-red); font-size:0.9rem;">Google Privacy & Terms &rarr;</a>
         </li>
       </ul>
 
-      <h2>4. Advertising Policy: 100% Ad-Free Experience</h2>
+      <h2>4. Advertising &amp; Google Mobile Ads (AdMob) Policy</h2>
       <p>
-        Zen Mate Official is currently completely <strong>ad-free</strong>. The application contains no advertising SDKs, does not display banner or interstitial advertisements, and does not collect or request the Android Advertising ID (<code>AD_ID</code>).
+        To support continuous development, server maintenance, and infrastructure costs while offering Zen Mate as a free application on Google Play, the Application displays advertisements powered by <strong>Google Mobile Ads SDK (Google AdMob)</strong>, provided by Google LLC.
+      </p>
+      <p>
+        Zen Mate serves non-intrusive banner advertisements and occasional interstitial advertisements during natural workflow transitions (such as completing a media save). We enforce strict frequency capping to prevent disruptive ad experiences.
+      </p>
+      <p><strong>Information Processed by Google AdMob:</strong></p>
+      <p>In accordance with Google Play Developer Policies and Google's Advertising Policies, Google AdMob may automatically collect and process certain non-personally identifiable technical telemetry to deliver, measure, and optimize advertisements, including:</p>
+      <ul>
+        <li><strong>Google Advertising ID (AAID / GAID):</strong> A unique, user-resettable identifier assigned to your Android device used for ad serving and fraud detection.</li>
+        <li><strong>Device &amp; Telemetry Information:</strong> Device manufacturer, hardware model, Android operating system version, carrier, and screen dimensions.</li>
+        <li><strong>Coarse Location (IP-derived):</strong> General geographic location (country or metropolitan area level, not precise GPS) to serve geographically appropriate ads and prevent click fraud.</li>
+        <li><strong>Ad Interaction Data:</strong> Metrics on ad views, impressions, clicks, and load performance.</li>
+      </ul>
+      <p><strong>Managing and Opting Out of Personalized Ads:</strong></p>
+      <p>
+        You have direct control over personalized advertisements at the Android operating system level. You can reset or delete your Advertising ID or opt out of interest-based ads at any time:
+      </p>
+      <ul>
+        <li>Open your device <strong>Settings</strong> &gt; <strong>Google</strong> &gt; <strong>Ads</strong> (or <strong>Settings</strong> &gt; <strong>Privacy</strong> &gt; <strong>Ads</strong>).</li>
+        <li>Select <strong>Delete advertising ID</strong> or <strong>Reset advertising ID</strong>.</li>
+        <li>You can also turn on <strong>"Opt out of Ads Personalization"</strong> where available.</li>
+      </ul>
+      <p>
+        To learn more about how Google processes ad data and your choices:
+        <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--crimson-red); font-size:0.9rem;">Google Privacy Policy &rarr;</a>
+        <br><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" style="color:var(--crimson-red); font-size:0.9rem;">Google Advertising Technologies &amp; Policies &rarr;</a>
+        <br><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" style="color:var(--crimson-red); font-size:0.9rem;">How Google uses information from apps that use our services &rarr;</a>
       </p>
 
-      <h2>5. Google Play Policy & Intellectual Property Compliance</h2>
+      <h2>5. Google Play Policy &amp; Intellectual Property Compliance</h2>
       <p>
         Zen Mate operates in strict compliance with the Google Play Developer Distribution Agreement and third-party terms of service:
       </p>
@@ -253,17 +280,17 @@
         <li><strong>Authorized Media Only:</strong> Users are solely responsible for respecting the copyright, intellectual property rights, and terms of service of any third-party platforms from which media is saved.</li>
       </ul>
 
-      <h2>5. Children's Privacy</h2>
+      <h2>6. Children's Privacy</h2>
       <p>
-        Zen Mate is not directed at children under the age of 13. We do not knowingly collect any personal information from children. If you believe any such data has inadvertently been transmitted, please notify us immediately.
+        Zen Mate is not directed at children under the age of 13. We do not knowingly collect any personal information from children. If you believe any such data has inadvertently been transmitted, please notify us immediately at <a href="mailto:zentixteamofficial@gmail.com" style="color:var(--crimson-red);">zentixteamofficial@gmail.com</a>.
       </p>
 
-      <h2>6. Security of Your Data</h2>
+      <h2>7. Security of Your Data</h2>
       <p>
         Because all downloaded files, playlist items, and ambient mixer settings are stored locally on your device storage, you retain complete control over your media files. You may delete them at any time using Zen Mate or your device's built-in File Manager.
       </p>
 
-      <h2>7. Developer Contact Information</h2>
+      <h2>8. Developer Contact Information</h2>
       <p>For any privacy inquiries, policy clarifications, or feedback regarding Zen Mate Official, contact:</p>
       <ul>
         <li><strong>Developer Organization:</strong> Zentix Team</li>
