@@ -1,8 +1,8 @@
 {
-  "latest_version_code": 2004,
-  "latest_version_name": "1.0.3",
-  "title": "Zen Mate Mandatory Update (v1.0.3)",
-  "changelog": "- Critical performance & stability update\n- Smooth Unity Ads integration (No more interruptions)\n- 120Hz lag-free Downloads tab indicator\n- Fixed Facebook & social media video downloads\n- Accurate error notifications for private/unsupported links\n- Auto link typo correction & faster downloading",
+  "latest_version_code": 2005,
+  "latest_version_name": "1.0.4",
+  "title": "Zen Mate Pro Update (v1.0.4)",
+  "changelog": "- Fixed Video Player duration (0:00) & slider seeking issue\n- Automatic HLS TS-to-MP4 remuxing with full container support\n- Real-time accurate download size estimation (No false size spikes)\n- Smooth 120Hz player controls & fluid scrubbing\n- Background download stability & improved notification tracking",
   "apk_url": "https://github.com/kaali-k/zenmate-app/releases/download/v1.0.0/Zen.Mate-arm64-v8a-release.apk",
   "apk_url_arm64": "https://github.com/kaali-k/zenmate-app/releases/download/v1.0.0/Zen.Mate-arm64-v8a-release.apk",
   "apk_url_armeabi": "https://github.com/kaali-k/zenmate-app/releases/download/v1.0.0/Zen.Mate-armeabi-v7a-release.apk",
