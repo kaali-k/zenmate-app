@@ -1,7 +1,7 @@
 {
   "latest_version_code": 2005,
-  "latest_version_name": "1.0.4",
-  "title": "Zen Mate Pro Update (v1.0.4)",
+  "latest_version_name": "1.0.1",
+  "title": "Zen Mate Pro Update (v1.0.1)",
   "changelog": "- Fixed Video Player duration (0:00) & slider seeking issue\n- Automatic HLS TS-to-MP4 remuxing with full container support\n- Real-time accurate download size estimation (No false size spikes)\n- Smooth 120Hz player controls & fluid scrubbing\n- Background download stability & improved notification tracking",
   "apk_url": "https://github.com/kaali-k/zenmate-app/releases/download/v1.0.0/Zen.Mate-arm64-v8a-release.apk",
   "apk_url_arm64": "https://github.com/kaali-k/zenmate-app/releases/download/v1.0.0/Zen.Mate-arm64-v8a-release.apk",
